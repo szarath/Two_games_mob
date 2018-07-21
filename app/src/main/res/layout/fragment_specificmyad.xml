@@ -1,0 +1,216 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.szara_000.team02_mobile.Specificmyad"
+   >
+
+    <ScrollView
+        android:id="@+id/specificad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <LinearLayout
+                    android:id="@+id/specificadlin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_margin="25dp">
+
+                    <TextView
+                        android:text="Edit Ad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="47dp"
+                        android:id="@+id/textView6"
+                        android:textStyle="normal|bold"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:text="Pictures"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myadtextview"
+                        android:textSize="18sp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_height="250dp"
+                                app:srcCompat="@drawable/mdtp_done_background_color"
+                                android:id="@+id/myadimagepic1"
+                                android:layout_weight="1"
+                                android:layout_width="250dp" />
+
+                            <ImageView
+                                android:layout_width="250dp"
+                                android:layout_height="250dp"
+                                app:srcCompat="@drawable/mdtp_done_background_color"
+                                android:id="@+id/myadimagepic2"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="250dp"
+                                android:layout_height="250dp"
+                                app:srcCompat="@drawable/mdtp_done_background_color"
+                                android:id="@+id/myadimagepic3"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <AutoCompleteTextView
+                            android:id="@+id/adedittitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Title"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:inputType="text" />
+
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Platorm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/myadtextview2"
+                            android:textSize="18sp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false" />
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:id="@+id/myadeditspinner"
+
+                            android:spinnerMode="dialog" />
+
+
+
+
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <AutoCompleteTextView
+                            android:id="@+id/adeditdesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="175dp"
+                            android:hint="Description"
+                            android:maxLines="10"
+                            android:singleLine="false"
+                            android:inputType="none" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <AutoCompleteTextView
+                            android:id="@+id/adeditprice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Price"
+                            android:inputType="none|number|numberDecimal"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+                        <CheckBox
+                            android:text="Negotiable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/adeditnegotiable" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:text="Show Number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/adeditshownum"
+                            android:layout_weight="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <AutoCompleteTextView
+                            android:id="@+id/adeditlocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Location"
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:clickable="false"
+                            android:editable="false" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/myadeditbtn"
+                        style="?android:textAppearanceSmall"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Edit Ad"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent" />
+                    <Button
+                        android:id="@+id/myaddeletebtn"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Delete Ad"
+                        android:textStyle="bold"
+                        android:layout_row="0"
+                        android:layout_column="6" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>

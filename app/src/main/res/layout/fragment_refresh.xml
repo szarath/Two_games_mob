@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.szara_000.team02_mobile.Refresh"
+    android:background="@color/cardview_light_background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="173dp"
+            android:layout_height="96dp"
+            android:id="@+id/refreshbtn"
+            android:layout_row="13"
+            android:layout_column="7"
+            android:layout_gravity="center"
+        android:text="Refresh" />
+
+
+</FrameLayout>

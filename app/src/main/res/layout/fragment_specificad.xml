@@ -1,0 +1,289 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.szara_000.team02_mobile.Specificad"
+    >
+
+
+    <ScrollView
+        android:id="@+id/specificad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <LinearLayout
+                    android:id="@+id/specificadlin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_margin="25dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:id="@+id/spetitle"
+                        android:textStyle="normal|bold"
+                        android:textSize="24sp"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Pictures"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spetextpic"
+                        android:textSize="18sp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+
+                                android:layout_height="250dp"
+                                app:srcCompat="@drawable/mdtp_done_background_color"
+                                android:id="@+id/speimagepic1"
+                                android:layout_weight="1"
+                                android:layout_width="250dp" />
+
+                            <ImageView
+                                android:layout_width="250dp"
+                                android:layout_height="250dp"
+                                app:srcCompat="@drawable/mdtp_done_background_color"
+                                android:id="@+id/speimagepic2"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="250dp"
+                                android:layout_height="250dp"
+                                app:srcCompat="@drawable/mdtp_done_background_color"
+                                android:id="@+id/speimagepic3"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/speplatform"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Platform"
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="Negotiable"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spenegotiable"
+                                android:textStyle="normal|bold"
+                                android:visibility="invisible"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="130dp" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/speprice"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Price"
+                                    android:inputType="none"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:clickable="false"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_width="149dp" />
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/spedescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="157dp"
+                            android:hint="Description"
+                            android:maxLines="10"
+                            android:singleLine="false"
+                            android:inputType="none"
+
+
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Contact Number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/specontactnumber"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/speconnum"
+                            android:layout_weight="1"
+                            android:textStyle="normal|bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:clickable="true"
+                            android:linksClickable="true"
+                            android:enabled="true"
+                            android:focusable="true"
+                            android:longClickable="true"
+                            android:focusableInTouchMode="true"
+
+                            android:autoLink="phone"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/spelocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Location"
+                            android:inputType="none"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:editable="false"
+
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/spemsgname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:editable="true" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <AutoCompleteTextView
+                            android:id="@+id/spemsgemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:editable="true" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <AutoCompleteTextView
+                            android:id="@+id/spemsgtext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Message"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:editable="true" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/rspemsgbutton"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Send message"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/reportbtn"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Report"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

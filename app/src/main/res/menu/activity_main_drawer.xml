@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_black_48dp"
+                android:title="Home" />
+
+
+
+    <item android:title="YOUR ACCOUNT">
+        <menu>
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_account_box_black_48dp"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_verified_user_black_48dp"
+            android:title="Register" />
+
+        <item
+            android:id="@+id/my_ad"
+            android:icon="@drawable/ic_insert_photo_black_48dp"
+            android:title="My Ads" />
+            <item
+                android:id="@+id/post_ad"
+                android:icon="@drawable/ic_attach_money_black_48dp"
+                android:title="Post Ad" />
+        </menu>
+    </item>
+
+    <item android:title="SETTINGS">
+        <menu>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_insert_emoticon_black_48dp"
+                android:title="Account" />
+
+        </menu>
+    </item>
+
+    <item android:title="HELP">
+        <menu>
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_help_black_48dp"
+            android:title="Contact Us" />
+        </menu>
+        </item>
+</menu>
